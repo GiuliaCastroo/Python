@@ -9,9 +9,14 @@ Média < 5: Reprovado
 Escreva um programa que receba três notas como entrada e calcule a média final. Com base na média, exiba a situação do aluno.s
 """
 
-nota1 = int(input(""))
-nota2 =int(input(""))
-nota3 =int(input(""))
-media_final = nota1 + nota2+ nota3 /3
+nota1 = int(input("Insira a N1: "))
+nota2 =int(input("Insira a N2: "))
+nota3 =int(input("Insira a N3: "))
+media_final = (nota1 + nota2 + nota3) / 3
 
-
+if media_final >= 7:
+    print("Aprovado")
+elif media_final >= 5:
+    print("Recuperação")
+else:
+    print("Reprovado")
